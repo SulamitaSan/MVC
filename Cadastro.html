@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>World Turismo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="shortcut icon" href="/imagens/icon.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="agencia.css">
+</head>
+
+<body>
+
+    <div class="home">
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary bg-gradient">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">World Turismo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        <a class="nav-link" href="Sobre-Nós.html">Sobre Nós</a>
+                        <a class="nav-link" href="Destinos.html">Destinos</a>
+                        <a class="nav-link" href="Promocoes.html">Promoções</a>
+                        <a class="nav-link" href="Contato.html">Contato</a>
+                        <a class="nav-link" href="Cadastro.html">Cadastro</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--navbar-->
+        <br>
+        <main class="container d-flex justify-content-center flex-column my-2">
+            <h1>Cadastro</h1><br>
+
+            <form action="formulario">
+                <!-- nome -->
+                <label for="nome" class="form-label">Nome Completo:</label>
+                <input type="text" name="nome" id="nome" class="form-control" required placeholder="Nome"><br>
+                
+                <!-- Data nascimento -->
+                <label for="data" class="form-label">Data nascimento:</label>
+                <input type="date" name="data" id="data" class="form-control" required><br>
+
+                <!-- Genero -->
+
+                <input type="radio" name="opc" id="masc" value="masc" required>
+                <label for="masc">Masculino</label><br>
+
+                <input type="radio" name="opc" id="fem" value="fem" required>
+                <label for="fem">Feminino</label><br>
+
+                <input type="radio" name="opc" id="trans" value="trans" required>
+                <label for="trans">Trans</label><br>
+            <br>
+
+                <!--Endereço-->
+                <label for="endereco" class="form-label">Endereço:</label>
+                <input type="text" name="endereco" id="endereco" class="form-control" required placeholder="Endereço"><br>
+                
+                <!-- Email -->
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" name="email" id="email" class="form-control" required placeholder="Email">
+                <br>
+
+                <!--Senha-->
+                <label for="inputPassword6" class="form-label">Senha:</label>
+                <input type="password" id="inputPassword6" class="form-control" required placeholder="Digite a senha">
+                <br>
+                <label for="inputPassword6" class="form-label">Confirma a Senha:</label>
+                <input type="password" id="inputPassword6" class="form-control" required placeholder="Digite a senha novamente">
+                <br>
+
+                <!-- Cidade -->
+                <label for="cidade" class="form-label">Cidade:</label>
+                <input type="text" id="cidade" class="form-control" required placeholder="Digite o nome da Cidade">
+
+                <!-- Estado -->
+
+                <br>
+                <label for="estado" class="form-label">Estado:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Escolha um estado</option>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                </select>
+                <br>
+                <!-- Telefone -->
+                <div class="mb-3">
+                    <label for="tel" class="form-label">Telefone:</label>
+                    <input type="tel" name="tel" id="tel" class="form-control" maxlength="11" required
+                        placeholder="DDD + Número">
+                </div>
+                <input type="radio" name="opc" id="opc" value="opc" required>
+                <label for="opc">Li e concordo com as <a href="#">Politicas de Privacidade</a>. </label><br>
+                <input type="radio" name="opc" id="opc" value="opc" required>
+                <label for="opc">Li e concordo com os <a href="#">Termos de Compra</a>. </label><br>
+                <input type="radio" name="opc" id="opc" value="opc" required>
+                <label for="opc">Desejo receber promoções de viagens do World Turismo.</label><br>
+                <br>
+                <!-- Button enviar -->
+                <input type="submit" class="btn btn-primary" value="Enviar">
+
+                <!-- <button type="submit" class="btn btn-primary">Enviar</button> -->
+            </form>
+        </main>
+        <footer class="d-flex align-items-center justify-content-center">
+            <p class="">&#169 by Sulamita Santos</p>
+        </footer>
+    </div>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
