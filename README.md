@@ -1,2 +1,6 @@
-Usando o padrão MVC <br>
-Continuação do site de viagens World Turismo
+# World Turismo :airplane:
+
+Site de agencia de viagens
+
+## Stack utilizada
+Padrão MVC
